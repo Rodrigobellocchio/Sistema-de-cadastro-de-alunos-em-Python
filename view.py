@@ -96,7 +96,7 @@ def criar_alunos(i):
         query = "INSERT INTO alunos (nome, email, telefone, sexo, imagem, data_nascimento, cpf, turma_nome) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"
         cur.execute(query, i)
 
-# ver todas os alunos ( Read R ) 
+# ver todos os alunos ( Read R ) 
 def ver_alunos():
     lista = []
     with con:
