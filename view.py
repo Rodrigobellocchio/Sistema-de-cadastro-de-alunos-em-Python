@@ -4,9 +4,9 @@ import sqlite3
 # criando conexao
 try:
     con = sqlite3.connect('cadastro_alunos.db')
-    print('Conexao com o banco de dados realizado com sucesso!')
+    print("Conexao com o banco de dados realizado com sucesso!")
 except sqlite3.Error as e:
-    print('Erro ao conectar com o banco de dados')
+    print("Erro ao conectar com o banco de dados", e)
 
 # tabela de cursos ---------------------------------------------
 
