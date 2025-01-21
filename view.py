@@ -77,7 +77,7 @@ def ver_turmas():
 def atualizar_turmas(i):
     with con:
         cur = con.cursor()
-        query = "UPDATE turmas SET nome=?, cursos_nome=?, data_inicio=? WHERE id=?"
+        query = "UPDATE turmas SET nome=?, curso_nome=?, data_inicio=? WHERE id=?"
         cur.execute(query, i) 
 
 # deletar as turmas ( Delete D )
